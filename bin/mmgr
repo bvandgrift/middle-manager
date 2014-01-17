@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path(File.join(File.dirname(__FILE__), ".."))
+
+require "rubygems"
+require "bundler/setup"
+require "thor"
+require "lib/middle_manager"
+
+MiddleManager.start(ARGV)
